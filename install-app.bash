@@ -8,8 +8,14 @@ sudo -v
 #    < /dev/null 2> /dev/null ; \
 #    brew install caskroom/cask/brew-cask 2> /dev/null
 
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+# isntall brew cask
+brew tap caskroom/cask
+brew install brew-cask
+
 # install wget
-#brew install wget --with-libressl
+brew install wget
 
 # move to Download
 cd ~/Download
@@ -52,6 +58,19 @@ brew cask install typora
 # install slack
 brew cask install slack 
 
+# install docker
+brew cask install docker
+
+# install skype
+brew cask install skype
+
+# install balenaEtcher
+brew cask install balenaetcher
+
+# install wireshark
+brew install wireshark --with-qt
+
+
 # install oh my zsh
 # see for more details
 # https://medium.com/statementdog-engineering/prettify-your-zsh-command-line-prompt-3ca2acc967f
@@ -78,6 +97,8 @@ git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/theme
 # install sshfs
 brew cask install osxfuse
 brew install sshfs
+
+
 
 echo " you have to install \n line\n xcode\n cahtemate for FB\n Debit\n & Credit\n pages\n numbers\n keynote\n from app store"
 
