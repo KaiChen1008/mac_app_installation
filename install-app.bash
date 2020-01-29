@@ -40,7 +40,11 @@ mv Keyboard\ Cleaner.app /Applications
 # install unaichiver
 wget https://dl.devmate.com/com.macpaw.site.theunarchiver/TheUnarchiver.zip
 unzip TheUnarchiver.zip
-mv The\ Unarchiver /Applications
+mv The\ Unarchiver.app /Applications
+
+
+# install rar
+wget https://rar.tw/download.php?file=rarosx-5.8.0.tar.gz
 
 
 # set HOMEBREW_NO_AUTO_UPDATE=1
