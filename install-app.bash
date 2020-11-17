@@ -4,15 +4,7 @@
 sudo -v
 
 # install homwbrew
-#ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" \
-#    < /dev/null 2> /dev/null ; \
-#    brew install caskroom/cask/brew-cask 2> /dev/null
-
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-# isntall brew cask
-brew tap caskroom/cask
-brew install brew-cask
 
 # install wget
 brew install wget
@@ -72,25 +64,31 @@ brew cask install skype
 brew cask install balenaetcher
 
 # install wireshark
-brew install wireshark --with-qt
+#brew install wireshark --with-qt
 
+# install notion
+brew cask install notion
 
 # install oh my zsh
 # see for more details
 # https://medium.com/statementdog-engineering/prettify-your-zsh-command-line-prompt-3ca2acc967f
 
 # install item
-brew cask instal iterm2
+brew cask install iterm2
 # clone iterm color
 
 git clone https://github.com/mbadolato/iTerm2-Color-Schemes
 
-
-# 先執行這行，才能用 homebrew 安裝字型。曾經執行過的人可以跳過這個指令
-brew tap homebrew/cask-fonts
+# tmux
+brew install tmux
 
 # download font 
-brew cask install font-sourcecodepro-nerd-font
+#brew tap homebrew/cask-fonts
+#brew cask install font-sourcecodepro-nerd-font
+
+#brew tap homebrew/cask-fonts
+#brew cask install font-hack-nerd-font
+# https://github.com/ryanoasis/nerd-fonts/releases
 
 # install oh my zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
