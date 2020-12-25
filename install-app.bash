@@ -10,7 +10,7 @@ sudo -v
 brew install wget
 
 # move to Download
-cd ~/Download
+cd ~/Downloads
 
 # install iina
 wget https://dl.iina.io/IINA.v1.0.3.dmg
@@ -35,8 +35,8 @@ unzip TheUnarchiver.zip
 mv The\ Unarchiver.app /Applications
 
 
-# install rar
-wget https://rar.tw/download.php?file=rarosx-5.8.0.tar.gz
+# install rar - no matches found
+# wget https://rar.tw/download.php?file=rarosx-5.8.0.tar.gz
 
 
 # set HOMEBREW_NO_AUTO_UPDATE=1
@@ -46,35 +46,35 @@ export HOMEBREW_NO_AUTO_UPDATE=1
 brew cask install google-chrome
 
 # install vscode
-brew cask install visual-studio-code
+brew install visual-studio-code
 
 # install typora
-brew cask install typora
+brew install typora
 
 # install slack
-brew cask install slack 
+brew install slack 
 
 # install docker
-brew cask install docker
+# brew install docker
 
 # install skype
-brew cask install skype
+# brew install skype
 
 # install balenaEtcher
-brew cask install balenaetcher
+# brew install balenaetcher
 
 # install wireshark
 #brew install wireshark --with-qt
 
 # install notion
-brew cask install notion
+brew install notion
 
 # install oh my zsh
 # see for more details
 # https://medium.com/statementdog-engineering/prettify-your-zsh-command-line-prompt-3ca2acc967f
 
 # install item
-brew cask install iterm2
+brew install iterm2
 # clone iterm color
 
 git clone https://github.com/mbadolato/iTerm2-Color-Schemes
@@ -85,19 +85,22 @@ brew install tmux
 # download font 
 #brew tap homebrew/cask-fonts
 #brew cask install font-sourcecodepro-nerd-font
-
-#brew tap homebrew/cask-fonts
-#brew cask install font-hack-nerd-font
+# download font manually
 # https://github.com/ryanoasis/nerd-fonts/releases
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Hack.zip
+echo "please install fonts manually"
 
 # install oh my zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # install oh my zsh theme
-git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+# git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k (x) 
+# https://draculatheme.com/iterm/
+git clone https://github.com/dracula/iterm.git
+echo "set the zsh style manually"
 
 # install sshfs
-brew cask install osxfuse
+brew install osxfuse
 brew install sshfs
 
 
