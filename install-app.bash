@@ -104,6 +104,22 @@ brew install osxfuse
 brew install sshfs
 
 
+# install zsh plugin
+# autojump
+brew install autojump
+# zsh-autosuggestion
+git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+# syntax-highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+
+# install tmux plugin
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+touch ~/.tmux.conf
+# see https://github.com/tmux-plugins/tpm for more details
+# see https://draculatheme.com/tmux/
+
+
 
 echo " you have to install \n line\n xcode\n cahtemate for FB\n Debit\n & Credit\n pages\n numbers\n keynote\n from app store"
 
