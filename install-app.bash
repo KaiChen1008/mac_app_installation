@@ -4,7 +4,7 @@
 sudo -v
 
 # install homwbrew
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # install wget
 brew install wget
@@ -17,6 +17,7 @@ wget https://dl.iina.io/IINA.v1.0.3.dmg
 hdiutil attach IINA.v1.0.3.dmg
 cp -r /Volumes/IINA/IINA.app /Applications
 hdiutil detach /Volumes/IINA
+
 
 # install appcleaner
 wget https://freemacsoft.net/downloads/AppCleaner_3.5.zip
@@ -43,7 +44,7 @@ mv The\ Unarchiver.app /Applications
 export HOMEBREW_NO_AUTO_UPDATE=1
 
 # install chrome
-brew cask install google-chrome
+brew install google-chrome
 
 # install vscode
 brew install visual-studio-code
@@ -118,8 +119,6 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 touch ~/.tmux.conf
 # see https://github.com/tmux-plugins/tpm for more details
 # see https://draculatheme.com/tmux/
-
-
 
 echo " you have to install \n line\n xcode\n cahtemate for FB\n Debit\n & Credit\n pages\n numbers\n keynote\n from app store"
 
