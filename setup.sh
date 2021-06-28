@@ -26,5 +26,10 @@ brew install wget
 # install python
 ./Packages/install-python.sh 
 
+# install go
+./Packages/install-go.sh
+
+# install node
+# ./Packages/install-nvm.sh
 
 echo "install finished"
