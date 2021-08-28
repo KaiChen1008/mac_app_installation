@@ -21,7 +21,8 @@ brew install typora
 brew install slack 
 
 # install docker
-brew install docker
+# brew install docker
+brew install --cask docker
 
 # install notion
 brew install notio
